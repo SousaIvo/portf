@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Footer Twitter link color */
+  --color-1: #ee7344;
+  /* Container background color */
+  --color-2: #e8ded2;
+  /* Body background color */
+  --color-3: #776d8a;
+  /* Color of title */
+  --color-4: #2b2c48;
+  /* Default font color */
+  --color-5: #212241;
+  /* Page underline color */
+  --color-6: #1d9bf0;
+  /* Hover background color */
+  --color-7: rgba(15, 20, 25, 0.1);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-3);
+    color: var(--color-4);
+    overflow-x: hidden;
+    letter-spacing: 0.5px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.wrapper {
+    min-width: 280px;
+    max-width: 520px;
+    background-color: var(--color-1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container {
+    /* O contêiner central só é usado quando você precisa de conteúdo centralizado */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-2);
+    height: 100%;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.personal-info {
+    transition-duration: 0.8s;
+    height: 250px;
+    position: relative;
+}
+
+/* Começo do cabeçalho Avatar */
+
+.avatar-container {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+img {
+    border-radius: 50%;
+    box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.eye-cover1 {
+    /*background-color: #ee7344;*/
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    top: 27.5%;
+    left: 47%;
+    border-radius: 30%;
+}
+
+.eye-cover2 {
+   /* background-color: #ee7344; */
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    top: 27.7%;
+    left: 52.5%;
+    border-radius: 30%;
+}
+
+#eyes1{
+    width: 5px;
+    height: 5px;
+    background-color: #2b2c48;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(83, 81, 81, 0.637);
+    overflow: hidden;
+    top: 35%;
+    left: 35%;
+}
+
+#eyes2{
+    width: 5px;
+    height: 5px;
+    background-color: #2b2c48;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(83, 81, 81, 0.637);
+    overflow: hidden;
+    top: 23%;
+    left: 32%;
+}
+
+/* fim do Cabeçalho avatar */
+
+/* Cabeçalho header-info-container (começo) */
+.header-info-container {
+    text-align: center;
+}
+
+.header-info-container h1 {
+    font-size: 25px;
+}
+
+.header-info-container p {
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    color: var(--color-4);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+}
