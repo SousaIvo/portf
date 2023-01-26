@@ -15,23 +15,97 @@
     <div class="wrapper">
         <!-- Use um container para deixar o conteúdo no centro da página -->
         <div class="container">
-            <div class="personal-info">
-                <div class="avatar-container">
-                    <img src="https://assets.codepen.io/9277864/PF.png" alt="Ivo Sousa" width="100" height="100"/>
-                    <div class="eye-cover1">
-                        <div id="eyes1"></div>
+            <header id="header">
+                <div class="personal-info">
+                    <div class="avatar-container">
+                        <img src="https://assets.codepen.io/9277864/PF.png" alt="Ivo Sousa" width="100" height="100"/>
+                        <div class="eye-cover1">
+                            <div id="eyes1"></div>
+                        </div>
+                        <div class="eye-cover2">
+                            <div id="eyes2"></div>
+                        </div>
                     </div>
+                    <div class="header-info-container">
+                        <h1>Ivo Sousa</h1>
+                        <p>Desenvolvedor Web  <br>[HTML, CSS, JavaScript]</p>
+                        <img src="https://assets.codepen.io/9277864/mood-rock.svg" alt="Rock" width="25" height="25">
+                    </div>
+                    <div class="header-icons">
+                        <div class="header-icons-row first-icons">
+                            <div class="header-icon-4"></div>
+                            <div class="header-icon-2"></div>
+                            <div class="header-icon-3"></div>
+                        </div>
+                        <div class="header-icons-row">
+                            <div class="header-icon-7"></div>
+                            <div class="header-icon-10"></div>
+                            <div class="header-icon-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="nav-container">
+                    <ul>
+                
+                        <li class="active-bg" id="menu-item-1">
+                            <button id="bio-btn" onclick="btnClick('bio')" class="blue-line">
+                                <img src="https://assets.codepen.io/9277864/about-me.svg" alt="Bio" width="40" height="40">
+                                <p>Bio</p>
+                            </button>
+                        </li>
+                
+                        <li id="menu-item-2">
+                            <button id="experience-btn" onclick="btnClick('experience')">
+                                <img src="https://assets.codepen.io/9277864/office-work.svg" alt="Experience" width="40" height="40">
+                                <p>Experiência</p>
+                            </button>
+                        </li>
+                
+                        <li id="menu-item-3">
+                            <button id="portfolio-btn" onclick="btnClick('portfolio')">
+                                <img src="https://assets.codepen.io/9277864/page.svg" alt="Portfolio" width="40" height="40">
+                                <p>PortFolio</p>
+                            </button>
+                        </li>
+                
+                        <li id="menu-item-4">
+                            <button id="contact-btn" onclick="btnClick('contact')">
+                                <img src="https://assets.codepen.io/9277864/contact.svg" alt="Contato" width="40" height="40">
+                                <p>Contato</p>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-                    <div class="eye-cover2">
-                        <div id="eyes2"></div>
-                    </div>
+           <main>
+            <section id="bio">
+                <h2>Bio</h2>
+                <p><span class="emoji">🙋‍</span>Olá,</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nemo tempora sequi deserunt cum cupiditate reprehenderit rerum ipsum quas id harum molestias autem sed sunt. Quos possimus quibusdam dignissimos odio?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius ratione dolor velit debitis culpa?</p>
+                <ul>
+                    <li><span class="emoji">👉</span>Lorem ipsum dolor sit amet.</li>
+                    <li><span class="emoji">👉</span>Lorem ipsum dolor sit amet.</li>
+                    <li><span class="emoji">👉</span>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <div class="social-media">
+                    <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-facebook.svg" alt="Facebook" width="28" height="28"></a></div>
+
+                    <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-facebook.svg" alt="Facebook" width="28" height="28"></a></div>
+
+                    <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-facebook.svg" alt="Facebook" width="28" height="28"></a></div>
+
+                    <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-facebook.svg" alt="Facebook" width="28" height="28"></a></div>
+
+                    <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-facebook.svg" alt="Facebook" width="28" height="28"></a></div>
                 </div>
-                <div class="header-info-container">
-                    <h1>Ivo Sousa</h1>
-                    <p>Desenvolvedor Web  <br>[HTML, CSS, JavaScript]</p>
-                    <img src="https://assets.codepen.io/9277864/mood-rock.svg" alt="Rock" width="25" height="25">
-                </div>
-            </div>
+
+                
+            </section>
+           </main> 
         </div>
     </div>
 
