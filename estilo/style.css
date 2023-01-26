@@ -151,16 +151,56 @@ img {
     gap: 74%;
 }
 
+
+
 .first-icons {
     flex-direction: column;
 }
 
-/* div {
+.header-info-container .header-icons .first-icons div {
     width: 40px;
     height: 40px;
     background-size: cover;
     opacity: 0.4;
-} */
+}
+
+.header-icon-1 {
+    background-image: url("https://assets.codepen.io/9277864/programming-laptop-coding.svg");
+  }
+  .header-icon-2 {
+    background-image: url("https://assets.codepen.io/9277864/programming.svg");
+  }
+  .header-icon-3 {
+    background-image: url("https://assets.codepen.io/9277864/js.svg");
+  }
+  .header-icons-row .header-icon-4 {
+    background-image: url("https://assets.codepen.io/9277864/html.svg");
+  }
+  .header-icon-5 {
+    background-image: url("https://assets.codepen.io/9277864/git.svg");
+  }
+  .header-icon-6 {
+    background-image: url("https://assets.codepen.io/9277864/database-key.svg");
+  }
+  .header-icon-7 {
+    background-image: url("https://assets.codepen.io/9277864/css.svg");
+  }
+  .header-icon-8 {
+    background-image: url("https://assets.codepen.io/9277864/computer-bug-1.svg");
+  }
+  .header-icon-9 {
+    background-image: url("https://assets.codepen.io/9277864/browser.svg");
+  }
+  .header-icon-10 {
+    background-image: url("https://assets.codepen.io/9277864/vue.svg");
+  }
+  .header-icon-11 {
+    background-image: url("https://assets.codepen.io/9277864/python.svg");
+  }
+  .header-icon-12 {
+    background-image: url("https://assets.codepen.io/9277864/front-end.svg");
+  }
+
 .header-icons-row {
     flex: 1;
     display: flex;
@@ -224,6 +264,26 @@ img {
     background-color: var(--color-6) !important;
 }
 
+.active-bg {
+    background-color: var(--color-7);
+}
+
+/*.display-none {
+    display: none;
+}*/
+
+.display-block {
+    display: block;
+}
+
+.small-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px 0 20px;
+}
+
 #bio ul {
     list-style-type: none;
     margin-bottom: 20px;
@@ -246,4 +306,53 @@ img {
 
 .social-media a:hover{
     background-color: var(--color-7);
+}
+
+.social-media a img {
+    width: 28px;
+    height: 28px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#experience{
+}
+.history {
+    position: relative;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#experience .history::before{
+    content: "";
+    position: absolute;
+    left: 4px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(134, 214, 243, 0) 0%,
+    rgba(37, 41, 58, 1) 100%);
+}
+
+#experience .history div {
+    margin-left: 40px;
+    padding-block: 2px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+   #experience .history div::before {
+        content: attr(data-year);
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        left: 0;
+        border: 1px solid #000;
+        background-color: #000;
+        font-size: 12px;
+        text-indent: -55px;
+        border-radius: 50%;
+        line-height: 1.1;
 }
