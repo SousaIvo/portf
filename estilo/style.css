@@ -95,7 +95,7 @@ main {
     padding-top: 30px;
     padding-bottom: 5px;
 }
-img {
+.avatar-container img {
     border-radius: 50%;
     box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
 }
@@ -164,6 +164,7 @@ img {
     margin-bottom: 5px;
 }
 
+
 .header-icons {
     padding: 20px;
     position: absolute;
@@ -198,6 +199,15 @@ img {
   }
   .header-icons-row .header-icon-4 {
     background-image: url("https://assets.codepen.io/9277864/html.svg");
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: -1;
+    opacity: 0.2;
+    transform: rotate(45deg);
   }
   .header-icon-5 {
     background-image: url("https://assets.codepen.io/9277864/git.svg");
@@ -268,6 +278,12 @@ img {
     font-weight: bold;
     letter-spacing: 0.8px;
     font-size: 15px;
+}
+
+.nav-container ul li button img{
+    border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .nav-container button p {
@@ -478,6 +494,27 @@ h2 {
     .nav-container button img p{
         font-size: 12px;
     }
+
+    .eye-cover1{
+        width: 15px;
+        height: 6px;
+        left: 189px;
+        padding-top: 2px;
+    }
+    .eye-cover1 #eyes1 {
+        margin-top: 1.2px;
+    }
+
+    .eye-cover2 {
+        width: 16px;
+        height: 6px;
+        padding: 1px;
+    }
+
+    .eye-cover2 #eyes2 {
+        margin-top: 1px;
+    }
+
 }
 
 @keyframes letsGoTop {
