@@ -59,6 +59,29 @@ body {
     padding-bottom: 30px;
 }
 
+main {
+    padding: 0 20px 30px 20px;
+    line-height: 1.5;
+}
+
+.codepen-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    height: 30px;
+}
+
+.codepen-footer a {
+    color: var(--color-1);
+    text-decoration: none;
+}
+
 .personal-info {
     transition-duration: 0.8s;
     height: 250px;
@@ -261,16 +284,16 @@ img {
 }
 
 .blue-line::after{
-    background-color: var(--color-6) !important;
+    background-color: var(--color-6)!important;
 }
 
 .active-bg {
     background-color: var(--color-7);
 }
 
-/*.display-none {
+.display-none {
     display: none;
-}*/
+}
 
 .display-block {
     display: block;
@@ -318,9 +341,12 @@ h2 {
     font-size: 20px;
 }
 
-#experience{
+.emoji {
+    font-size: 25px;
 }
-.history {
+
+
+#experience .history {
     position: relative;
     margin-left: 60px;
     margin-top: 20px;
@@ -356,3 +382,156 @@ h2 {
         border-radius: 50%;
         line-height: 1.1;
 }
+
+#portfolio .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#portfolio .grid a {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+.grid-item {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+.portfolio-image {
+    background-color: #2d4059;
+}
+
+.portfolio-image img {
+    width: 100%;
+}
+
+.portfolio-description {
+    padding: 10px;
+}
+
+#contact {
+    font-size: 14px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-item p {
+    padding: 5px 20px 5px 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.follow-btn{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.follow-btn a{
+    text-decoration: none;
+    background-color: var(--color-6);
+    color: var(--color-2);
+    padding: 10px 60px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 6px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.follow-btn a:hover{
+    transform: scale(1.009);
+}
+
+@media only screen and (max-width: 420px){
+    .small-header {
+        transform: translate(-5%, -30%);
+    
+    }
+    .header-icons {
+        transform: translate(0, 100%);
+        padding-inline: 5px;
+        gap: 65%;
+    }
+
+    #personal-info{
+        gap: 10px;
+    }
+
+    .nav-container button {
+        padding: 8px;
+    }
+
+    .nav-container button img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-container button img p{
+        font-size: 12px;
+    }
+}
+
+@keyframes letsGoTop {
+    0%{
+        bottom: 0;
+    }
+
+    99%{
+        opacity: 1;
+    }
+
+    100%{
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+@keyframes letsGoBottom {
+    0%{
+        top: 0;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        top: 93%;
+        opacity: 0;
+    }
+}
+
+.bike1{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.bike2{
+    position: absolute;
+    top: 0;
+    left: -68px;
+    transform: rotate(90deg) scaleX(-1) scaleY(-1);
+    opacity: 0;
+}
+
+.animationBottom{
+    animation: letsGoBottom 8s linear 0s 1;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+.animationTop{
+    animation: letsGoTop 8s linear 0s 1;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
