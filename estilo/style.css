@@ -517,6 +517,13 @@ h2 {
 
 }
 
+@media only screen and (max-width: 390px){
+    .eye-cover1{
+        background-color: #ee7344;
+        left: 175px;
+    }
+}
+
 @keyframes letsGoTop {
     0%{
         bottom: 0;
